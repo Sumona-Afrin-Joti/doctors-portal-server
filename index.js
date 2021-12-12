@@ -82,6 +82,7 @@ async function run() {
         email,
         image: imageBuffer
       }
+      console.log(doctor)
 
       const result = await doctorsCollection.insertOne(doctor)
       res.json(result)
